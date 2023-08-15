@@ -3,11 +3,6 @@ h1, .bylines{
   font-family: sans-serif;
   font-size: 2.8rem;
 }
-
-.block h2{
-  font-family: sans-serif;
-  font-size: 2.8rem;
-}
 body{
   font-family: "GT Sectra", serif;
   padding-left: 100px;
@@ -36,9 +31,8 @@ html {
 }
 
 /*Designing the Header*/
-/* .masthead-categories */
 
-header{
+ .head1{
   display: grid;
   height: 100%;
   grid-column-gap: 2.5rem;
@@ -48,13 +42,16 @@ header{
   margin: 0;
   padding-top: 2.5rem;
 }
+
+
 nav ul{
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 
 .bs{
-  /* position: relative; */
+  position: relative;
   width: 100%;
   display: grid;
   grid-gap: 2.5rem;
@@ -81,7 +78,6 @@ nav ul{
   width: 100%;
   box-sizing: inherit;
   height: auto;
-
 }
 
 .bs-img{
@@ -92,6 +88,7 @@ nav ul{
 .masthead-branding{
   grid-column: 1/span 2;
   grid-row: 1/span 2;
+  margin: auto;
 }
 
 .masthead-branding .masthead-branding-logo{
@@ -106,15 +103,132 @@ nav ul{
   display: initial;
   grid-column: 3/span 6;
   grid-row: 2/span 1;
-  /* padding: 1.2rem 0; */
   border-top: 1px solid var(--pumice,#cacaca);
   border-bottom: 1px solid var(--pumice,#cacaca);
+  margin:0;
 }
 
 
 
 /* Designing the subheader */
 
+.rs{
+    width: 100%;
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(8,1fr);
+    align-items: start;
+    padding: 2.5rem 0;
+    border-top: 1px solid;
+}
+.rs-lab-cont{
+  grid-column: 1/span 3;
+  grid-row: 1/span 2;
+}
+.rs-cont--n3-i1{
+  grid-column: 3/span 2;
+  grid-row: 1/span 2;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  height:100%
+}
+.rs-cont--n3-i2{
+  grid-column: 5/span 2;
+  grid-row: 1/span 2;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  height: 100%;
+}
+.rs-cont--n3-i3{
+  grid-column: 7/span 2;
+  grid-row: 1/span 2;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  height: 100%;
+}
+
+
+/* Destiny part */
+.block {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  border-top: 1px solid;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.block .image-container img{
+  width: 300px
+}
+
+.block .spotlight-content{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.spotlight-header h3 a:hover{
+  color: red;
+}
+
+.spotlight-header-subtitle{
+  font-size: 21px;
+}
+
+.spotlight-header{
+
+}
+
+.spotlight-story-dateline a{
+  color: red;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.spotlight-story-text .spotlight-story-link{
+  color: black;
+  text-decoration: none;}
+
+ .spotlight-story-text {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.spotlight-story-author a {
+  color:black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.spotlight-story-author a:hover{
+  text-decoration:underline;
+}
+.spotlight-story:hover .spotlight-story-link, .spotlight-story:hover .spotlight-story-headline,.spotlight-story:hover .spotlight-story-author, .spotlight-story:hover .spotlight-story-author a{
+  color:red
+}
+
+
+
+/* footer */
+
+footer{
+  background: blueviolet;
+}
+
+footer ul{
+  list-style:none;
+  display:flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 90%;
+  margin:0 10% 0 10%;
+}
+
+footer .menu-item a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size:12 px;
+}
 
 /* These styles are for the disclaimer -- leave them alone */
 
