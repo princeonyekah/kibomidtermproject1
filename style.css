@@ -3,7 +3,7 @@ h1, .bylines{
   font-family: sans-serif;
   font-size: 2.8rem;
 }
-body{
+main , header {
   font-family: "GT Sectra", serif;
   padding-left: 100px;
   padding-right: 100px;
@@ -12,9 +12,16 @@ body{
 link{
   font-family: SFMono-Regular,"Roboto Mono","Lucida Console",Monaco,Courier,monospace;
 }
-
+body{
+  background-color: var(--body);
+}
 a{
   text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: var(--bright);
 }
 
 ul{
@@ -108,8 +115,6 @@ nav ul{
   margin:0;
 }
 
-
-
 /* Designing the subheader */
 
 .rs{
@@ -146,7 +151,17 @@ nav ul{
   padding-left: 10px;
   height: 100%;
 }
+.masthead-branding-tagline{
+  font-size: 1.2rem;
+}
+.rs-rubric, .bs-rubric{
+  color: var(--bright);
+  font-size: 1.2rem;
+}
 
+.spotlight-header-title{
+  font-size: 1.8rem;
+}
 
 /* Destiny part */
 .block {
@@ -157,8 +172,14 @@ nav ul{
   padding-bottom: 25px;
 }
 
-.block .image-container img{
-  width: 300px
+body .block .spotlight-content .spotlight-story  .image-container img{
+  height:189px;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin: 0px;
 }
 
 .block .spotlight-content{
@@ -166,21 +187,16 @@ nav ul{
   grid-gap: 20px;
   grid-template-columns: 33.3% 33.3% 33.3%;
 }
-
-.spotlight-header h3 a:hover{
-  color: red;
+.spotlight-header{
+  padding: 0px 15px 0px 0px;
 }
 
 .spotlight-header-subtitle{
   font-size: 21px;
 }
 
-.spotlight-header{
-
-}
-
 .spotlight-story-dateline a{
-  color: red;
+  color: var(--bright);
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -203,31 +219,51 @@ nav ul{
   text-decoration:underline;
 }
 .spotlight-story:hover .spotlight-story-link, .spotlight-story:hover .spotlight-story-headline,.spotlight-story:hover .spotlight-story-author, .spotlight-story:hover .spotlight-story-author a{
-  color:red
+  color:var(--bright)
 }
 
 
 
 /* footer */
 
-footer{
-  background: blueviolet;
+footer {
+  background-color: var(--bright);
+  display: block ;
+  padding-top: 80px;
+  line-height: 1.5;
+  max-width: 100%;
+  margin: 39.6px;
+  margin: 39.6px;
+
+}
+
+.footer-menu{
+  margin: auto;
 }
 
 footer ul{
   list-style:none;
   display:flex;
   text-align: center;
-  justify-content: space-between;
-  width: 90%;
-  margin:0 10% 0 10%;
+  justify-content: center;
 }
 
 footer .menu-item a {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
-  font-size:12 px;
+  font-size:13px;
+  border-right: 1px solid white;
+  padding: 0 15px;
+}
+
+.footer-copyright {
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: .5px;
+  padding-bottom: 15px;
 }
 
 /* These styles are for the disclaimer -- leave them alone */
@@ -241,3 +277,5 @@ footer .menu-item a {
 body {
   margin: 0
 }
+
+/* copied */
